@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #535151;
+}
+.container .music-app {
+  width: 350px;
+  height: 100%;
+  padding: 25px 35px 10px ;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px 5px  #f33e5c80;
+  background: #fac0ca;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50% );
+}
+.music-app .button-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-top div {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background: #fff;
+  color: #f53756;
+  font-size: 18px;
+  box-shadow: 0 2px 5px #f33e5c80;
+  text-align: center;
+  line-height: 40px;
+  /*
+  Another way to center buttons inside div
+  display: flex;
+  justify-content: center;
+  align-item: center;
+  */
+}
+.button-top div i {
+  color: #f53756;
+}
+.music-app .song-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+.music-app h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0 5px;
+  color: #333;
+}
+.music-app p {
+  color: #333;
+  margin-bottom: 20px;
+}
+input[type = range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #f53756;
+  margin: 25px 0;
+  cursor: pointer;
+}
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f53756;
+  border: 6px solid #fff;
+  box-shadow: 0 2px 5px #f33e5c80;
+}
+.buttons-audio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0 ;
+}
+.buttons-audio div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: #fff;
+  text-align: center;
+  line-height: 50px;
+  color: #f53756;
+  box-shadow: 0 2px 5px #f33e5c80;
+  margin: 0 15px ;
+  cursor: pointer;
+}
+.buttons-audio div:nth-child(2) {
+  background: #f53756;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+}
